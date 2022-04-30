@@ -1,0 +1,9 @@
+server:
+  port: 18085
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 1033110136@qq.com
+    password: qpdvuolxfbucbdfh
+    protocol: smtp

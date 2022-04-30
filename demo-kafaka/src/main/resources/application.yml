@@ -1,0 +1,16 @@
+server:
+  port: 18081
+
+spring:
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    template:
+      default-topic: demo
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: group-1
+
