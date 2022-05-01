@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.junfeng</groupId>
-    <artifactId>demo-swagger</artifactId>
+    <artifactId>swagger</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo-swagger</name>
     <description>demo-swagger</description>
