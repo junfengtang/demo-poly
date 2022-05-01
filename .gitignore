@@ -1,5 +1,4 @@
-# Created by .ignore support plugin (hsz.mobi)
-### xkcoding-后端 template
+# Created by .ignore support plugin
 ### Spring Boot ###
 target/
 !.mvn/wrapper/maven-wrapper.jar
