@@ -1,0 +1,12 @@
+server:
+  port: 18087
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://admin:123456@localhost:27017/admin
+
+logging:
+  level:
+    org.springframework.data.mongodb.core: debug
+
