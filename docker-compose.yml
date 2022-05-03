@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  demo-swagger:
+    build: ./demo-swagger
+    image: tangjunfeng/my-java
+    ports:
+      - 18083:18083
+    networks:
+      - internal_access
+      - external_access
+
+networks:
+  internal_access:
+    internal: true
+  external_access:
+
