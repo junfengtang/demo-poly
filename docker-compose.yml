@@ -10,6 +10,15 @@ services:
       - internal_access
       - external_access
 
+  demo-task:
+    build: ./demo-task
+    image: tangjunfeng/demo-task
+    ports:
+      - 18089:18089
+    networks:
+      - internal_access
+      - external_access
+
 networks:
   internal_access:
     internal: true
