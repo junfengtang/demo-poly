@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.junfeng</groupId>
-    <artifactId>structlog</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>demo-structlog</name>
-    <description>demo-structlog</description>
+    <artifactId>demo-task</artifactId>
+    <version>0.0.1</version>
+    <name>demo-task</name>
+    <description>demo-task</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -27,24 +27,20 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.4.5</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- Structured logging -->
         <dependency>
-            <groupId>structlog4j</groupId>
-            <artifactId>structlog4j-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <!-- Optional JSON formatter -->
-        <dependency>
-            <groupId>structlog4j</groupId>
-            <artifactId>structlog4j-json</artifactId>
-            <version>1.0.0</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
 
     </dependencies>
