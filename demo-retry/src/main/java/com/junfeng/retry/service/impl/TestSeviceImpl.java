@@ -7,6 +7,9 @@ import org.springframework.retry.annotation.Recover;
 import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
+import java.util.List;
+
 /**
  * @author junfeng
  * @Classname TestSeviceImpl
@@ -19,19 +22,22 @@ import org.springframework.stereotype.Service;
 public class TestSeviceImpl implements TestSevice {
 
 
+    private int i = 0;
     @Override
-    @Retryable(value = Exception.class, maxAttempts = 3, backoff = @Backoff(delay = 2000,multiplier = 1.5))
-    public void getData1() {
+    @Retryable(recover = "testService3",maxAttempts = 7,backoff = @Backoff(delay = 3000,maxDelay = 3))
+    public List<Integer> getData1(){
         log.info("--------------------------------getdata1-------------------------------");
         log.info(String.valueOf(1/0));
+        return null;
     }
 
-
-
-    @Override
     @Recover
-    public void getData2() {
-        log.info("--------------------------------getdata1-------------------------------");
+    public List<Integer> testService3(Exception e) {
+        log.info("--------------------------------getdata2------------------------------");
+        log.info("失败原因：{}",e.getMessage());
+        return Collections.singletonList(2);
     }
+
+
 
 }

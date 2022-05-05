@@ -1,5 +1,7 @@
 package com.junfeng.retry.service;
 
+import java.util.List;
+
 /**
  * @author junfeng
  * @Classname TestSevice
@@ -10,10 +12,7 @@ package com.junfeng.retry.service;
 public interface TestSevice {
 
 
-    void getData1();
-
-
-    void getData2();
+    List<Integer> getData1();
 
 
 
