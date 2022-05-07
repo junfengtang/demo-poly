@@ -34,18 +34,18 @@
         </dependency>
 
         <!-- Structured logging -->
-        <dependency>
+     <!--   <dependency>
             <groupId>structlog4j</groupId>
             <artifactId>structlog4j-api</artifactId>
             <version>1.0.0</version>
-        </dependency>
+        </dependency>-->
 
         <!-- Optional JSON formatter -->
-        <dependency>
+      <!--  <dependency>
             <groupId>structlog4j</groupId>
             <artifactId>structlog4j-json</artifactId>
             <version>1.0.0</version>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 
