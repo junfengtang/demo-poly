@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * @author junfeng
  * @Classname HelloController
@@ -22,8 +24,8 @@ public class HelloController {
 
     @GetMapping
     public String hello() {
-        testSevice.getData1();
-        return "ok";
+        List<Integer> result = testSevice.getData1();
+        return result.toString();
     }
 
 

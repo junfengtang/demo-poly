@@ -9,24 +9,19 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.junfeng</groupId>
-    <artifactId>demo-retry</artifactId>
-    <version>0.0.1</version>
-    <name>demo-retry</name>
-    <description>demo-retry</description>
+    <artifactId>demo-jwt</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>demo-jwt</name>
+    <description>demo-jwt</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.retry</groupId>
-            <artifactId>spring-retry</artifactId>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.6.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
