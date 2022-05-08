@@ -1,2 +1,6 @@
 server:
   port: 18091
+
+Login:
+  username: admin
+  password: admin
