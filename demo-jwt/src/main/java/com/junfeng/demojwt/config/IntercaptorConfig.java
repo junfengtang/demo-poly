@@ -23,4 +23,5 @@ public class IntercaptorConfig implements WebMvcConfigurer {
                 //排除登录接口
                 .excludePathPatterns("/v1/user/login");
     }
+
 }
