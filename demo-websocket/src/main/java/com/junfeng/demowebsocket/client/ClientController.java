@@ -20,10 +20,10 @@ import java.util.Date;
 public class ClientController {
 
     @GetMapping
-    public String hello(String msg) {
+    public String hello(String msg,String userid) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
         String date = dateFormat.format(new Date());
-        WebSocketServer.sendInfo(msg+"~~~"+date,"10");
+        WebSocketServer.sendInfo(msg+"~~~"+date,userid);
         return "ok";
     }
 
