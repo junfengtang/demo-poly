@@ -19,6 +19,22 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jooq</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
@@ -48,6 +64,30 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-codegen-maven</artifactId>
+                <configuration>
+                    <jdbc>
+                        <driver>com.mysql.cj.jdbc.Driver</driver>
+                        <url>jdbc:mysql://127.0.0.1:3306/jooqdemo?serverTimezone=GMT%2B8</url>
+                        <user>root</user>
+                        <password>root</password>
+                    </jdbc>
+                    <generator>
+                        <database>
+                            <inputSchema>jooqdemo</inputSchema>
+                            <excludes>flyway_schema_history</excludes>
+                        </database>
+                        <target>
+                            <packageName>com.junfeng.demojooq</packageName>
+                            <directory>/Users/junfeng/Documents/java/github/demo-poly/demo-jooq/src/main/java/</directory>
+                        </target>
+                    </generator>
+                </configuration>
+            </plugin>
+
+
         </plugins>
     </build>
 
