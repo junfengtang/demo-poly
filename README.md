@@ -30,7 +30,11 @@ https://github.com/junfengtang/demo-poly/tree/develop/demo-jwt
 
 https://github.com/junfengtang/demo-poly/tree/develop/demo-websocket
 
+6.jooq
 
+完成：2020-05-23
+
+https://github.com/junfengtang/demo-poly/tree/develop/demo-jooq
 
 
 
