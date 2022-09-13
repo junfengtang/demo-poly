@@ -11,10 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Version V1.0
  */
 @SpringBootApplication
-public class Application {
+public class TokenApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(TokenApplication.class, args);
     }
 
 }
